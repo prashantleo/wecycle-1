@@ -1,0 +1,30 @@
+.sidenav-container {
+    height: 100%;
+  }
+  
+  .sidenav {
+    width: 200px;
+  }
+  
+  .sidenav .mat-toolbar {
+    background: inherit;
+  }
+  
+  .mat-toolbar.mat-primary {
+    position: sticky;
+    top: 0;
+    z-index: 99;
+  }
+  
+  .brand-area{
+    height: 1.6rem;
+    text-align: center;
+  }
+  
+  .brand-area-container{
+    text-align: center;
+  }
+
+  .menu-icon{
+    margin-right: 1rem;
+  }

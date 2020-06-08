@@ -1,0 +1,84 @@
+
+<div class="container">
+
+    <h3>Select store or supermarket </h3>
+
+    <mat-card class="store-selector">
+    <mat-form-field class="value-fields">
+        <mat-label>Select store</mat-label>
+        <mat-select>
+          <mat-option *ngFor="let store of stores" [value]="store.value">
+            {{store.viewValue}}
+          </mat-option>
+        </mat-select>
+    </mat-form-field>
+</mat-card>
+
+
+<label>Recyclables </label>
+<mat-card class="value-selector" >
+    <mat-slider class="value-fields-slider"
+    thumbLabel
+    [displayWith]="formatLabel"
+    tickInterval="1000"
+    min="0"
+    [tickInterval]="getSliderTickInterval()"
+    [step]="step"
+    max="100">
+</mat-slider>
+</mat-card>
+
+
+<label>Non-recyclables </label>
+
+<mat-card class="value-selector" >
+    <mat-slider class="value-fields-slider"
+    thumbLabel
+    [displayWith]="formatLabel"
+    tickInterval="1000"
+    min="0"
+    [tickInterval]="getSliderTickInterval()"
+    [step]="step"
+    max="100"></mat-slider>
+</mat-card>
+
+<label>Reusables</label>
+<mat-card class="value-selector" >
+    <mat-slider class="value-fields-slider"
+    thumbLabel
+    [displayWith]="formatLabel"
+    tickInterval="1000"
+    min="0"
+    [tickInterval]="getSliderTickInterval()"
+    [step]="step"
+    max="100"></mat-slider>
+</mat-card>
+
+<label> Degradables</label>
+<mat-card class="value-selector" >
+    <mat-slider class="value-fields-slider"
+    thumbLabel
+    [displayWith]="formatLabel"
+    tickInterval="1000"
+    min="0"
+    [tickInterval]="getSliderTickInterval()"
+    [step]="step"
+    max="100"></mat-slider>
+</mat-card>
+
+
+
+
+<section>
+
+<div>
+
+    <button mat-raised-button color="primary" class="submit-button">Primary</button>
+</div>
+</section>
+   
+</div>
+
+
+
+
