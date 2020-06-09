@@ -32,6 +32,10 @@ import { FusionChartsModule } from "angular-fusioncharts";
 import * as FusionCharts from "fusioncharts";
 import * as charts from "fusioncharts/fusioncharts.charts";
 import * as FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
+import { YourStatsComponent } from './your-stats/your-stats.component';
+import { RecycleInfoComponent } from './recycle-info/recycle-info.component';
+import { VotePageComponent } from './vote-page/vote-page.component';
+import { LocationsPageComponent } from './locations-page/locations-page.component';
 
 
 
@@ -42,7 +46,11 @@ FusionChartsModule.fcRoot(FusionCharts, charts, FusionTheme);
     AppComponent,
     HomeComponent,
     WallComponent,
-    AddWasteComponent
+    AddWasteComponent,
+    YourStatsComponent,
+    RecycleInfoComponent,
+    VotePageComponent,
+    LocationsPageComponent
   ],
   imports: [
     FusionChartsModule,
