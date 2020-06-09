@@ -4,22 +4,22 @@
     [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">
     <mat-toolbar class="mat-elevation-z6">Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="#" routerLink="home" >
+      <a mat-list-item href="#" routerLink="home">
         <span class="material-icons menu-icon">
           home
-          </span>Home</a>
-      <a mat-list-item href="#" routerLink="wall" >
+        </span>Home</a>
+      <a mat-list-item href="#" routerLink="wall">
         <span class="material-icons menu-icon">
           view_list
-          </span>Wall of shame</a>
-      <a mat-list-item href="#" routerLink="vote-page" >
-        <span class="material-icons menu-icon" >
+        </span>Wall of shame</a>
+      <a mat-list-item href="#" routerLink="vote-page">
+        <span class="material-icons menu-icon">
           thumbs_up_down
-          </span>Vote</a>
-          <a mat-list-item href="#" routerLink="recycle-info">
-            <span class="material-icons menu-icon" >
-              info
-              </span>Recycling info</a>
+        </span>Vote</a>
+      <a mat-list-item href="#" routerLink="recycle-info">
+        <span class="material-icons menu-icon">
+          info
+        </span>Recycling info</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -28,12 +28,12 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-     <span>
-       <div class="brand-area-container">
-          <img  class="brand-area" src="../assets/logos/logo.png">
-       </div>
-       
-     </span>
+      <span>
+        <div class="brand-area-container">
+          <img class="brand-area" src="../assets/logos/logo.png">
+        </div>
+
+      </span>
     </mat-toolbar>
     <!-- Add Content Here -->
 
