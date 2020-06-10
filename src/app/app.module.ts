@@ -15,7 +15,7 @@ import { WallComponent } from './wall/wall.component';
 import { AddWasteComponent } from './add-waste/add-waste.component';
 
 
-
+import {MatGridListModule} from '@angular/material/grid-list';
 import {MatCardModule} from '@angular/material/card';
 import {MatSelectModule} from '@angular/material/select';
 import {MatSliderModule} from '@angular/material/slider';
@@ -66,6 +66,7 @@ FusionChartsModule.fcRoot(FusionCharts, charts, FusionTheme);
     MatSelectModule,
     MatCardModule,
     NgbModule,
+    MatGridListModule,
     CarouselModule,
     MatSliderModule
   ],
