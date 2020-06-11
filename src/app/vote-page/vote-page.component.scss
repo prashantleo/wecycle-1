@@ -1,0 +1,28 @@
+.brand-image{   
+    margin:0;
+    margin-top: 0 !important;
+    max-width: 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+}
+
+.brand-card{
+    padding: 8px;
+    margin-bottom: 5%;
+}
+
+.thumbs-up{
+    color: lighten($color: #125bad, $amount: 0);
+}
+
+.brand-name{
+    justify-content: space-around;  
+}
+
+.submit-button{
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+    margin: 6px 2px;
+}
