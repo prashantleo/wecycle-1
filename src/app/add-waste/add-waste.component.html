@@ -3,7 +3,7 @@
 
     <h3>Select store or supermarket </h3>
 
-    <mat-card class="store-selector">
+    <div class="store-selector">
     <mat-form-field class="value-fields">
         <mat-label>Select store</mat-label>
         <mat-select>
@@ -12,8 +12,8 @@
           </mat-option>
         </mat-select>
     </mat-form-field>
-</mat-card>
-
+    <mat-divider></mat-divider>
+</div>
 
 <label>Recyclables </label>
 <mat-card class="value-selector" >
@@ -71,14 +71,16 @@
 
 <section>
 
-<div>
 
-    <button mat-raised-button color="primary" class="submit-button">Primary</button>
-</div>
+
+
 </section>
    
 </div>
 
 
+    <mat-toolbar>
+            <button mat-raised-button color="primary" class="submit-button">Primary</button>
+    </mat-toolbar>
 
 

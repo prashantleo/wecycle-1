@@ -12,7 +12,7 @@ export class WallComponent {
   constructor() {
 
     this.chartConfig = {
-      width: '300',
+      width: '100%',
       height: '350',
       type: 'column2d',
       dataFormat: 'json',
@@ -37,10 +37,6 @@ export class WallComponent {
       {
         label: "D",
         value: "65"
-      },
-      {
-        label: "E",
-        value: "45"
       }
     ];
     // STEP 3 - Chart Configuration
