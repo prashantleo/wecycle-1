@@ -1,6 +1,6 @@
 
 mat-grid-tile {
-    background: lightblue;
+    
   }
 
 h3{
@@ -12,4 +12,39 @@ h3{
 }
   .mat-card-image{
       margin: 0 !important;
+  }
+  .top-emitter-card{
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+
+  .emitter-type{
+    font-size: 1.2rem;
+  }
+
+  .brand-image{
+    height: auto;
+    width: 100%;
+    padding-right: 20px;
+    border-right: 2px solid lightgray;
+    margin-right: 1rem;
+  }
+
+  .home-brand-name,
+  .home-brand-votes,
+  .home-brand-waste{
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .home-brand-name{
+    font-size: 20px;
+  }
+
+  .home-brand-votes{
+    font-size: 48px;
+  }
+  .home-brand-waste{
+    font-size: 12px;
   }

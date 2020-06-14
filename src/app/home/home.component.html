@@ -1,87 +1,99 @@
-
 <div class="container">
 
 
   <h3 class="heading-3">Add your weekly shopping waste list to get started </h3>
 
-  <owl-carousel-o [options]="customOptions" >
+  <owl-carousel-o [options]="customOptions">
 
-      
-      <ng-template class="container" carouselSlide>
-    
-        <mat-card class="menu-card" routerLink="/add-waste">
-          <mat-card-header>
-            <div mat-card-avatar class="example-header-image"></div>
-            <mat-card-title>Add waste</mat-card-title>
-            <mat-card-subtitle>Add your weekly shopping waste</mat-card-subtitle>
-          </mat-card-header>
-          <img mat-card-image src="../../assets/home/add-waste.png" alt="add waste">
-          <mat-card-content>
-            <p>
-            </p>
-          </mat-card-content>
-          <mat-card-actions>
-            <!-- <button mat-button>LIKE</button>
+
+    <ng-template class="container" carouselSlide>
+
+      <mat-card class="menu-card" routerLink="/add-waste">
+        <mat-card-header>
+
+          <mat-card-title>Add waste</mat-card-title>
+          <mat-card-subtitle>Add your weekly shopping waste</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="../../assets/home/add-waste.png" alt="add waste">
+        <mat-card-content>
+          <p>
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <!-- <button mat-button>LIKE</button>
             <button mat-button>SHARE</button> -->
-          </mat-card-actions>
-        </mat-card> 
+        </mat-card-actions>
+      </mat-card>
 
-      </ng-template>  
+    </ng-template>
 
 
-      
-      <ng-template class="container" carouselSlide>
-        <mat-card class="menu-card" routerLink="/your-stats" >
-          <mat-card-header>
-            <div mat-card-avatar class="example-header-image"></div>
-            <mat-card-title>Your statistics</mat-card-title>
-            <mat-card-subtitle>Personal statistics</mat-card-subtitle>
-          </mat-card-header>
-          <img mat-card-image src="../../assets/home/your-progress.png" alt="progress">
-          <mat-card-content>
-            <p>
-            </p>
-          </mat-card-content>
-          <mat-card-actions>
-            <!-- <button mat-button>LIKE</button>
+
+    <ng-template class="container" carouselSlide>
+      <mat-card class="menu-card" routerLink="/your-stats">
+        <mat-card-header>
+
+          <mat-card-title>Your statistics</mat-card-title>
+          <mat-card-subtitle>Personal statistics</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="../../assets/home/your-progress.png" alt="progress">
+        <mat-card-content>
+          <p>
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <!-- <button mat-button>LIKE</button>
             <button mat-button>SHARE</button> -->
-          </mat-card-actions>
-        </mat-card> 
+        </mat-card-actions>
+      </mat-card>
 
-    </ng-template>  
-      <ng-template class="container" carouselSlide>
-        <mat-card class="menu-card"  routerLink="/locations">
-          <mat-card-header>
-            <div mat-card-avatar class="example-header-image"></div>
-            <mat-card-title>Locations</mat-card-title>
-            <mat-card-subtitle>Waste deposite locations</mat-card-subtitle>
-          </mat-card-header>
-          <img mat-card-image src="../../assets/home/collection-points.png" alt="points">
-          <mat-card-content>
-            <p>
-            </p>
-          </mat-card-content>
-          <mat-card-actions>
-            <!-- <button mat-button>LIKE</button>
+    </ng-template>
+    <ng-template class="container" carouselSlide>
+      <mat-card class="menu-card" routerLink="/locations">
+        <mat-card-header>
+
+          <mat-card-title>Locations</mat-card-title>
+          <mat-card-subtitle>Waste deposite locations</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="../../assets/home/collection-points.png" alt="points">
+        <mat-card-content>
+          <p>
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <!-- <button mat-button>LIKE</button>
             <button mat-button>SHARE</button> -->
-          </mat-card-actions>
-        </mat-card> 
-    </ng-template>  
+        </mat-card-actions>
+      </mat-card>
+    </ng-template>
   </owl-carousel-o>
 
 
 
-<section>
-  <mat-card class="example-card">
-    <mat-card-header>
-      <div mat-card-avatar class="example-header-image"></div>
-      <mat-card-title>Shiba Inu</mat-card-title>
-      <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-    </mat-card-header>
-        <mat-card-content>
-    </mat-card-content>
-  </mat-card>
-</section>
+  <section>
+    <mat-card class="example-card" routerLink="/wall">
+      <div class="top-emitter-card">
+        <mat-card-title class="emitter-type">Highest emitter</mat-card-title>
+        <mat-card-subtitle>Statistics based on public votes</mat-card-subtitle>
+      </div>
+      <mat-card-content>
+        <mat-grid-list cols="3" rowHeight="">
+          <mat-grid-tile rowspan="1">
+            <img mat-card-image src="../../assets/logos/tesco.png" class="brand-image" alt="tesco">
+          </mat-grid-tile>
+          <mat-grid-tile colspan="2" class="brand-name">
+
+            <mat-grid-list cols="1" rowHeight="">
+              <div class="home-brand-name">Tesco ireland</div>
+              <div class="home-brand-votes">65%</div>
+              <div class="home-brand-waste">Non-Recyclables</div>
+            </mat-grid-list>
+          </mat-grid-tile>
+        </mat-grid-list>
+
+      </mat-card-content>
+    </mat-card>
+  </section>
 
 
 

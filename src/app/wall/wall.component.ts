@@ -23,19 +23,19 @@ export class WallComponent {
     //STEP 2 - Chart Data
     const chartData = [
       {
-        label: "A",
+        label: "Tesco",
         value: "90"
       },
       {
-        label: "B",
+        label: "Lidl",
         value: "60"
       },
       {
-        label: "C",
+        label: "Dunnes Stores",
         value: "80"
       },
       {
-        label: "D",
+        label: "Aldi",
         value: "65"
       }
     ];

@@ -1,17 +1,29 @@
 <div class="container">
 
   <section>
-    <mat-card class="example-card">
-      <mat-card-header>
-        <div mat-card-avatar class="example-header-image"></div>
-        <mat-card-title>Shiba Inu</mat-card-title>
-        <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-      </mat-card-header>
+    <mat-card class="emittor-card">
+      <div class="top-emitter-card">
+        <mat-card-title class="emitter-type">Highest emitter</mat-card-title>
+        <mat-card-subtitle>Statistics based on public votes</mat-card-subtitle>
+      </div>
       <mat-card-content>
+        <mat-grid-list cols="3" rowHeight="">
+          <mat-grid-tile rowspan="1">
+            <img mat-card-image src="../../assets/logos/tesco.png" class="brand-image" alt="tesco">
+          </mat-grid-tile>
+          <mat-grid-tile colspan="2" class="brand-name">
+
+            <mat-grid-list cols="1" rowHeight="">
+              <div class="home-brand-name">Tesco ireland</div>
+              <div class="home-brand-votes">65%</div>
+              <div class="home-brand-waste">Non-Recyclables</div>
+            </mat-grid-list>
+          </mat-grid-tile>
+        </mat-grid-list>
+
       </mat-card-content>
     </mat-card>
   </section>
-
 
 
   <section>
