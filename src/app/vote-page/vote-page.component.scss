@@ -8,18 +8,27 @@
 }
 
 .brand-card{
-    padding: 8px;
+    padding: 4px;
     margin-bottom: 5%;
 }
 
 .thumbs-up{
     color: lighten($color: #125bad, $amount: 0);
+    font-size: 2.4rem;
 }
 
 .brand-name{
     justify-content: space-around;  
 }
 
+.submit-footer {
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+  }
+  
+  
 .submit-button{
     padding: 5px;
     text-align: center;

@@ -1,8 +1,5 @@
 <div class="container">
 
-
-  <h3 class="heading-3">Add your weekly shopping waste list to get started </h3>
-
   <owl-carousel-o [options]="customOptions">
 
 
@@ -14,7 +11,7 @@
           <mat-card-title>Add waste</mat-card-title>
           <mat-card-subtitle>Add your weekly shopping waste</mat-card-subtitle>
         </mat-card-header>
-        <img mat-card-image src="../../assets/home/add-waste.png" alt="add waste">
+        <img src="../../assets/home/add-waste.png" alt="add waste">
         <mat-card-content>
           <p>
           </p>
@@ -71,7 +68,7 @@
 
 
   <section>
-    <mat-card class="example-card" routerLink="/wall">
+    <mat-card class="emittor-card" routerLink="/wall">
       <div class="top-emitter-card">
         <mat-card-title class="emitter-type">Highest emitter</mat-card-title>
         <mat-card-subtitle>Statistics based on public votes</mat-card-subtitle>
@@ -79,11 +76,11 @@
       <mat-card-content>
         <mat-grid-list cols="3" rowHeight="">
           <mat-grid-tile rowspan="1">
-            <img mat-card-image src="../../assets/logos/tesco.png" class="brand-image" alt="tesco">
+            <img src="../../assets/logos/tesco.png" class="brand-image" alt="tesco">
           </mat-grid-tile>
           <mat-grid-tile colspan="2" class="brand-name">
 
-            <mat-grid-list cols="1" rowHeight="">
+            <mat-grid-list cols="1" rowHeight="" class="emitter-stats">
               <div class="home-brand-name">Tesco ireland</div>
               <div class="home-brand-votes">65%</div>
               <div class="home-brand-waste">Non-Recyclables</div>

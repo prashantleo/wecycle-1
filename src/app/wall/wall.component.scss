@@ -19,11 +19,14 @@
 
   .brand-image{
     height: auto;
-    width: 100%;
-    padding-right: 20px;
-    border-right: 2px solid lightgray;
-    margin-right: 1rem;
+    width: 100%;  
   }
+
+.emitter-stats{
+  border-left: 2px solid lightgray;
+  padding-left: 2.4rem;
+}
+
 
   .home-brand-name,
   .home-brand-votes,
