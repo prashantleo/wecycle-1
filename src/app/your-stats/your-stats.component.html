@@ -2,6 +2,27 @@
 <div class="container">
 
     <h3>Select store or supermarket </h3>
+    <form [formGroup]="form" (ngSubmit)="submit()">
+      <div class="row">
+        <div class="col s12">
+          <h6>Multi Select</h6>
+        </div>
+        <div class="col s6">
+            <input type="text" ngxDaterangepickerMd
+            formControlName="selected" class="form-control" placeholder="Choose date"
+            [showDropdowns]="true"
+            showCancel="true"
+            />
+        </div>
+        <button type="submit" class="ngx-daterangepicker-action waves-effect waves-light btn" >Submit</button>
+        &nbsp;
+      
+        
+</div>
+</form>
+
+    
+
 
 <section>
 
@@ -9,6 +30,12 @@
       <fusioncharts type="Column2d" [chartConfig]="chartConfig" [dataSource]="dataSource">
       </fusioncharts>
     </mat-card>
+
+    <!--<mat-card>
+      <td>{{item.payload.doc.data().recyclables_quantity}} </td>
+      
+
+    </mat-card>-->
 
   </section>
 

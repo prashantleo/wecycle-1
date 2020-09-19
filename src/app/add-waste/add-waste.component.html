@@ -2,12 +2,13 @@
 <div class="container">
 
     <h3>Select store or supermarket </h3>
+    <form [formGroup]="itemForm" (ngSubmit)="submitItem()" #resetItemForm="ngForm" novalidate>
 
     <div class="store-selector">
     <mat-form-field class="value-fields">
         <mat-label>Select store</mat-label>
-        <mat-select>
-          <mat-option *ngFor="let store of stores" [value]="store.value">
+        <mat-select formControlName="store_name">
+          <mat-option *ngFor="let store of stores" [value]="store.viewValue">
             {{store.viewValue}}
           </mat-option>
         </mat-select>
@@ -17,7 +18,7 @@
 
 <label>Recyclables </label>
 <mat-card class="value-selector" >
-    <mat-slider class="value-fields-slider"
+    <mat-slider class="value-fields-slider"  formControlName="recyclables_quantity"
     thumbLabel
     [displayWith]="formatLabel"
     tickInterval="1000"
@@ -32,7 +33,7 @@
 <label>Non-recyclables </label>
 
 <mat-card class="value-selector" >
-    <mat-slider class="value-fields-slider"
+    <mat-slider class="value-fields-slider"  formControlName="nonrecyclable_quantity"
     thumbLabel
     [displayWith]="formatLabel"
     tickInterval="1000"
@@ -44,7 +45,7 @@
 
 <label>Reusables</label>
 <mat-card class="value-selector" >
-    <mat-slider class="value-fields-slider"
+    <mat-slider class="value-fields-slider"  formControlName="reusables_quantity"
     thumbLabel
     [displayWith]="formatLabel"
     tickInterval="1000"
@@ -56,7 +57,7 @@
 
 <label> Degradables</label>
 <mat-card class="value-selector" >
-    <mat-slider class="value-fields-slider"
+    <mat-slider class="value-fields-slider"  formControlName="degradables_quantity"
     thumbLabel
     [displayWith]="formatLabel"
     tickInterval="1000"
@@ -65,21 +66,25 @@
     [step]="step"
     max="100"></mat-slider>
 </mat-card>
-
-
-
-
-<section>
-
-
-
-
-</section>
-   
+</form>
 </div>
 
 
-    <mat-toolbar class="submit-footer">
-        <button mat-raised-button color="primary" class="submit-button">Primary</button>
-    </mat-toolbar>
+
+
+   
+
+
+<mat-card>
+    <div class="full-wrapper button-wrapper">
+      <div class="button-wrapper">
+        <button mat-flat-button color="warn" (click)="submitItem()">Submit</button>
+        <button mat-flat-button color="war" (click)="resetForm()">Clear</button>
+      </div>
+    </div>
+</mat-card>
+
+   <!---- <mat-toolbar class="submit-footer">
+        <button mat-raised-button color="primary" class="submit-button">Submit</button>
+    </mat-toolbar>-->
 

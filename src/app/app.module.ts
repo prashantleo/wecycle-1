@@ -13,12 +13,26 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { WallComponent } from './wall/wall.component';
 import { AddWasteComponent } from './add-waste/add-waste.component';
+import { NgxDaterangepickerMd } from 'ngx-daterangepicker-material';
+
 
 
 import {MatGridListModule} from '@angular/material/grid-list';
-import {MatCardModule} from '@angular/material/card';
-import {MatSelectModule} from '@angular/material/select';
+import {MatCardModule} from '@angular/material/card';import {MatSelectModule} from '@angular/material/select';
 import {MatSliderModule} from '@angular/material/slider';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import {environment} from '../environments/environment';
+import {ItemsService} from './shared/items.service'
+import {  MatChipsModule} from '@angular/material/chips';
+import { MatTooltipModule} from '@angular/material/tooltip';
+import { FusionChartsModule } from "angular-fusioncharts";
+import {  MatTableModule} from '@angular/material/table';
+import { MatPaginatorModule} from '@angular/material/paginator';
+import { MatDatepickerModule } from '@angular/material/datepicker'
+import { MatNativeDateModule } from '@angular/material/core'  
 
 
 
@@ -27,7 +41,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 
 
-import { FusionChartsModule } from "angular-fusioncharts";
 
 // Import FusionCharts library and chart modules
 import * as FusionCharts from "fusioncharts";
@@ -37,6 +50,7 @@ import { YourStatsComponent } from './your-stats/your-stats.component';
 import { RecycleInfoComponent } from './recycle-info/recycle-info.component';
 import { VotePageComponent } from './vote-page/vote-page.component';
 import { LocationsPageComponent } from './locations-page/locations-page.component';
+import { from } from 'rxjs';
 
 
 
@@ -69,9 +83,25 @@ FusionChartsModule.fcRoot(FusionCharts, charts, FusionTheme);
     NgbModule,
     MatGridListModule,
     CarouselModule,
-    MatSliderModule
+    MatSliderModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule,
+    MatChipsModule,
+ MatTooltipModule,
+ MatTableModule,
+ MatPaginatorModule,
+ NgxDaterangepickerMd.forRoot()
+
+ 
+  
+
+
   ],
-  providers: [],
+
+  providers: [ItemsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
